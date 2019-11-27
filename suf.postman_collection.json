@@ -1,0 +1,251 @@
+{
+	"info": {
+		"_postman_id": "6c570fb7-4ea1-49fe-8a1d-08b8b248ae0f",
+		"name": "suf",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "stuff ",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1df76f01-f7b1-4fa9-845c-10a83dec0763",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "orgdomain",
+						"value": "telistat.pprd.marist.cloud"
+					},
+					{
+						"key": "Origin",
+						"value": "https://telistat.pprd.marist.cloud"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1Yjk3MzJkNzkzZDQ3ZTZmZGNjNGYzYTEiLCJvcmdJZCI6IjViOTcyYjU0MzczZDczMGNkZjhkNTJkOSIsIm9yZ1R5cGUiOiJtaWMiLCJyb2xlcyI6WyJwaHlzaWNpYW4iXSwidHlwZSI6ImRvY3RvciIsInRpbWV6b25lIjoiQW1lcmljYS9BZGFrIiwiaWF0IjoxNTc0ODY3NjA0fQ.-RMmtv0ueqnywI8WpKuW_4Cd6EVvjLSptZKaJQlVH6w"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Referer",
+						"value": "https://telistat.pprd.marist.cloud/usercenter/patient"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en,vi;q=0.9,en-GB;q=0.8,en-NZ;q=0.7,en-CA;q=0.6"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"patientIds\":[\"5d708cdbbc237900084b376b\",\"5da04e727784c6000842ebf8\",\"5d9d85d3985c1c000865d088\",\"5cef566a1c4f800009bdb3eb\",\"5cb6fb63bb64620008e93751\",\"5cdc36848ebdbe0008174192\",\"5c34652c0de5ee145c9e6e51\",\"5cd39adc563c0a0009a62a0f\",\"5d4b23558b60c80008e486bb\",\"5d96ca2ec724c5000aa17d9e\"]}"
+				},
+				"url": {
+					"raw": "https://api.pprdmm.marist.cloud/service/patient/locations",
+					"protocol": "https",
+					"host": [
+						"api",
+						"pprdmm",
+						"marist",
+						"cloud"
+					],
+					"path": [
+						"service",
+						"patient",
+						"locations"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "orgdomain",
+								"value": "telistat.pprd.marist.cloud"
+							},
+							{
+								"key": "Origin",
+								"value": "https://telistat.pprd.marist.cloud"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1Yjk3MzJkNzkzZDQ3ZTZmZGNjNGYzYTEiLCJvcmdJZCI6IjViOTcyYjU0MzczZDczMGNkZjhkNTJkOSIsIm9yZ1R5cGUiOiJtaWMiLCJyb2xlcyI6WyJwaHlzaWNpYW4iXSwidHlwZSI6ImRvY3RvciIsInRpbWV6b25lIjoiQW1lcmljYS9BZGFrIiwiaWF0IjoxNTc0ODY3NjA0fQ.-RMmtv0ueqnywI8WpKuW_4Cd6EVvjLSptZKaJQlVH6w"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-site"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Referer",
+								"value": "https://telistat.pprd.marist.cloud/usercenter/patient"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip, deflate, br"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en,vi;q=0.9,en-GB;q=0.8,en-NZ;q=0.7,en-CA;q=0.6"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"patientIds\": [\n        \"5d708cdbbc237900084b376b\",\n        \"5da04e727784c6000842ebf8\",\n        \"5d9d85d3985c1c000865d088\",\n        \"5cef566a1c4f800009bdb3eb\",\n        \"5cb6fb63bb64620008e93751\",\n        \"5cdc36848ebdbe0008174192\",\n        \"5c34652c0de5ee145c9e6e51\",\n        \"5cd39adc563c0a0009a62a0f\",\n        \"5d4b23558b60c80008e486bb\",\n        \"5d96ca2ec724c5000aa17d9e\"\n    ]\n}"
+						},
+						"url": {
+							"raw": "https://api.pprdmm.marist.cloud/service/patient/locations",
+							"protocol": "https",
+							"host": [
+								"api",
+								"pprdmm",
+								"marist",
+								"cloud"
+							],
+							"path": [
+								"service",
+								"patient",
+								"locations"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.10"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Nov 2019 15:17:22 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15724800; includeSubDomains"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Cache-Control, Accept, x-access-token, orgdomain, x-device-type"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2ed-HaUF0IPu4swfzGNsxa7C1X9OT3g\""
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"OK\",\n    \"message\": \"success\",\n    \"result\": [\n        {\n            \"isDuplicate\": false,\n            \"patientId\": \"5d708cdbbc237900084b376b\"\n        },\n        {\n            \"isDuplicate\": false,\n            \"patientId\": \"5da04e727784c6000842ebf8\"\n        },\n        {\n            \"isDuplicate\": false,\n            \"patientId\": \"5d9d85d3985c1c000865d088\"\n        },\n        {\n            \"isDuplicate\": false,\n            \"patientId\": \"5cef566a1c4f800009bdb3eb\"\n        },\n        {\n            \"isDuplicate\": false,\n            \"patientId\": \"5cb6fb63bb64620008e93751\"\n        },\n        {\n            \"isDuplicate\": false,\n            \"patientId\": \"5cdc36848ebdbe0008174192\"\n        },\n        {\n            \"isDuplicate\": false,\n            \"patientId\": \"5c34652c0de5ee145c9e6e51\"\n        },\n        {\n            \"isDuplicate\": false,\n            \"patientId\": \"5cd39adc563c0a0009a62a0f\"\n        },\n        {\n            \"isDuplicate\": true,\n            \"patientId\": \"5d4b23558b60c80008e486bb\",\n            \"duplicatedData\": [\n                {\n                    \"location\": \"Buffalo\",\n                    \"dob\": \"2019-07-29\",\n                    \"_id\": \"5d63566f17fba90008ca501d\"\n                }\n            ]\n        },\n        {\n            \"isDuplicate\": false,\n            \"patientId\": \"5d96ca2ec724c5000aa17d9e\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
